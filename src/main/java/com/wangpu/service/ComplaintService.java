@@ -1,5 +1,7 @@
-package com.wangpu;
+package com.wangpu.service;
 
+import com.wangpu.ComplaintInfo;
+import com.wangpu.responsitory.ComplaintRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +16,7 @@ import java.util.List;
 public class ComplaintService {
 
     @Autowired
-    private  ComplaintRepository complaintRepository;
+    private ComplaintRepository complaintRepository;
 
     @Transactional
     public void  insertComplaintList(List<ComplaintInfo> list){

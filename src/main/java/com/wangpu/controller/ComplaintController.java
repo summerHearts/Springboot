@@ -1,5 +1,8 @@
-package com.wangpu;
+package com.wangpu.controller;
 
+import com.wangpu.ComplaintInfo;
+import com.wangpu.responsitory.ComplaintRepository;
+import com.wangpu.service.ComplaintService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -11,10 +14,10 @@ import java.util.List;
 public class ComplaintController {
 
     @Autowired
-    private  ComplaintRepository complaintRepository;
+    private ComplaintRepository complaintRepository;
 
     @Autowired
-    private  ComplaintService complaintService;
+    private ComplaintService complaintService;
 
 
     /**

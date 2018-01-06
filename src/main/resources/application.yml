@@ -10,3 +10,9 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+## myBaties配置
+
+mybatis:
+   typeAliasesPackage: com.wangpu.model
+      mapperLocations: classpath: com/wangpu/dao/*.xml
